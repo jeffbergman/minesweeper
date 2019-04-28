@@ -2,8 +2,6 @@ import React from 'react';
 import { connect } from 'react-redux';
 import Square from './Square';
 
-
-
 class Board extends React.Component {
 	
 	renderRow(row, rowIndex) {
@@ -21,39 +19,6 @@ class Board extends React.Component {
 		);
     
 	}
-
-/*
-	componentDidCatch(error, info) {
-    console.log('Board - componentDidCatch');
-    console.log(error);
-    console.log(info);
-  }
-
-  componentWillReceiveProps(nextProps) {
-  	console.log('Board - componentWillReceiveProps');
-    console.log(nextProps);
-  }
-
-  shouldComponentUpdate(nextProps, nextState) {
-  	console.log('Board - shouldComponentUpdate');
-    console.log(nextProps);
-    console.log(nextState);
-    return true;
-  }
-
-  componentWillUpdate(nextProps, nextState) {
-  	console.log('Board - componentWillUpdate');
-    console.log(nextProps);
-    console.log(nextState);	
-  }
-
-*/
-  componentDidUpdate(prevProps, prevState) {
-  	console.log(`Board - componentDidUpdate: ${Date()}`);
-    console.log(prevProps);
-    console.log(prevState);	
-  }
-
 
 	render() {
 		return (
