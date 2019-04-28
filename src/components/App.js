@@ -28,6 +28,9 @@ class App extends Component {
             <Level level={constants.BEGINNER}/>
             <Level level={constants.INTERMEDIATE}/>
             <Level level={constants.EXPERT}/>  
+          </div>
+          <div className="flex-col">
+            Instructions could go here
           </div> 
         </div>
       </div>  
